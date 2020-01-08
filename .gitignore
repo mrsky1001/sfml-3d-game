@@ -1,0 +1,10 @@
+*
+!*/
+sfml-3d-game/SFML-2.5.1
+sfml-3d-game/glew-2.1.0
+sfml-3d-game/glfw-3.3.1.bin.WIN32
+sfml-3d-game/glm
+!.gitignore
+!*.cpp
+!*.h
+!*.sln
