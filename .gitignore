@@ -1,7 +1,11 @@
 *
 !*/
 sfml-3d-game/dependencies/*
+!*.*shader
 !.gitignore
+!*.vcxproj
+!*.vcxproj.filters
+!*.vcxproj.user
 !*.cpp
 !*.h
 !*.sln
