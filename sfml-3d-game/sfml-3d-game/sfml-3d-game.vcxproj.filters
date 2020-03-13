@@ -32,9 +32,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="view.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="common\shader.hpp">
       <Filter>common</Filter>
     </ClInclude>

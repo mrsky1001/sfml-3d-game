@@ -1,6 +1,8 @@
 *
 !*/
 sfml-3d-game/dependencies/*
+sfml-3d-game/Debug/*
+sfml-3d-game/shaders/*
 !*.*shader
 !.gitignore
 !*.vcxproj

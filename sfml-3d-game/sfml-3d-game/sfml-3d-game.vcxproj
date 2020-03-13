@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{15986832-C2CE-4E77-B66D-E5DB87C8F033}</ProjectGuid>
     <RootNamespace>sfml3dgame</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -90,6 +90,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependencies\SFML-2.5.1glew-2.1.0\include;$(SolutionDir)dependencies\glew-2.1.0\include;$(SolutionDir)dependencies\glm;$(SolutionDir)dependencies\glfw-3.3.1.bin.WIN32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -116,6 +118,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
+	  <SubSystem>Console</SubSystem>						
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
@@ -132,7 +135,6 @@
     <ClInclude Include="common\controls.hpp" />
     <ClInclude Include="common\shader.hpp" />
     <ClInclude Include="common\texture.hpp" />
-    <ClInclude Include="view.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
