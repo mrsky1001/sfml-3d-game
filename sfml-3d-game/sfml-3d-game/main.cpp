@@ -4,9 +4,14 @@
 #include <GL/glew.h>
 // GLFW
 #include <GLFW/glfw3.h>
+#include <SFML/Main.hpp>
+#include <SFML/Graphics.hpp>
 
 #include <iostream>
 using namespace std;
+using namespace sf;
+
+const GLuint WIDTH = 800, HEIGHT = 600;
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
@@ -35,8 +40,7 @@ int main()
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 	cout << "Creating GLFW window..." << endl;
-	int widthW = 1024, heightW = 800;
-	GLFWwindow* window = glfwCreateWindow(widthW, heightW, "sfml-3d-cube", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "sfml-3d-cube", nullptr, nullptr);
 	if (window == nullptr)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
@@ -96,9 +100,15 @@ int main()
 	glBindVertexArray(0);
 
 
+	Shader vertexShaderSource;
+	if (!vertexShaderSource.loadFromFile("vertex_shader.vert", sf::Shader::Vertex))
+	{
+		// error...
+	}
+	vertexShaderSource.
 	GLuint vertexShader;
 	vertexShader = glCreateShader(GL_VERTEX_SHADER);
-	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
+	glShaderSource(vertexShader, 1, &((GLcharh)vertexShaderSource), NULL);
 	glCompileShader(vertexShader);
 
 	GLint success;
