@@ -118,23 +118,18 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-	  <SubSystem>Console</SubSystem>						
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="common\controls.cpp" />
-    <ClCompile Include="common\shader.cpp" />
-    <ClCompile Include="common\texture.cpp" />
     <ClCompile Include="main.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)dependencies\glfw-3.3.1.bin.WIN32\include;$(SolutionDir)dependencies\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="common\controls.hpp" />
-    <ClInclude Include="common\shader.hpp" />
-    <ClInclude Include="common\texture.hpp" />
+    <None Include="trianagle.fragmentshader" />
+    <None Include="trianagle.vertexshader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

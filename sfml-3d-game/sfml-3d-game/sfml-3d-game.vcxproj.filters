@@ -13,33 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="common">
-      <UniqueIdentifier>{9996221f-cdb0-46b5-b3e6-9fe1b630852d}</UniqueIdentifier>
+    <Filter Include="Исходные файлы\shaders">
+      <UniqueIdentifier>{4e903e4d-f16e-4b6c-8410-d3cf2c19e30a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="common\shader.cpp">
-      <Filter>common</Filter>
-    </ClCompile>
-    <ClCompile Include="common\controls.cpp">
-      <Filter>common</Filter>
-    </ClCompile>
-    <ClCompile Include="common\texture.cpp">
-      <Filter>common</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="common\shader.hpp">
-      <Filter>common</Filter>
-    </ClInclude>
-    <ClInclude Include="common\controls.hpp">
-      <Filter>common</Filter>
-    </ClInclude>
-    <ClInclude Include="common\texture.hpp">
-      <Filter>common</Filter>
-    </ClInclude>
+    <None Include="trianagle.vertexshader">
+      <Filter>Исходные файлы\shaders</Filter>
+    </None>
+    <None Include="trianagle.fragmentshader">
+      <Filter>Исходные файлы\shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
