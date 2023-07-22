@@ -1,3 +1,3 @@
 # About sfml-3d-game
 
-My school game development on sflm
+My school game development on sfml
